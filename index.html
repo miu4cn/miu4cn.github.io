@@ -63,13 +63,13 @@ border:1px solid #ddd;
 	url3=url2.split('.');if(url3.length==2){
 	document.getElementById("domain").innerHTML='WWW.'+url2;key=url3[0];}
 	else{document.getElementById("domain").innerHTML=url2;key=url3[1];}
-	document.title=url2+'您访问的域名可以转让…林约沥!This domain name for sale!';
 	for(i=0;i<=cndomains.length;i++){
 	if(url4==cndomains[i]||url4=='www.'+cndomains[i]){
 		key=cndomains[++i];
 		}
 	}
 	var i = document.getElementsByTagName("meta");
+	document.title=url2+key+'您访问的域名可以转让…林约沥!This domain name for sale!';
 	i[0]["content"] =key;
 	i[1]["content"] =key+'您访问的域名可以转让…林约沥!This domain name for sale!';
 </script>
